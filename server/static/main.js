@@ -23,39 +23,6 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/app-routing.module.ts":
-/*!***************************************!*\
-  !*** ./src/app/app-routing.module.ts ***!
-  \***************************************/
-/*! exports provided: AppRoutingModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-
-
-
-var routes = [];
-var AppRoutingModule = /** @class */ (function () {
-    function AppRoutingModule() {
-    }
-    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
-        })
-    ], AppRoutingModule);
-    return AppRoutingModule;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -63,7 +30,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9hcHAuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -94,7 +61,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'client';
     }
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -123,7 +89,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _roomlist_roomlist_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./roomlist/roomlist.component */ "./src/app/roomlist/roomlist.component.ts");
 
@@ -143,7 +109,7 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -163,7 +129,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJyb29tbGlzdC9yb29tbGlzdC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJyb29tbGlzdC5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -174,7 +140,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"/>\n    <title>Play List</title>\n</head>\n<body>\n    What play room would you like to enter?<br/>\n    <input id=\"room-name-input\" type=\"text\" size=\"100\"/><br/>\n    <input id=\"room-name-submit\" type=\"button\" value=\"Enter\"/>\n\n    <script>\n        document.querySelector('#room-name-input').focus();\n        document.querySelector('#room-name-input').onkeyup = function(e){\n            if(e.keyCode === 13){\n                document.querySelector('#room-name-submit').click();\n                }\n        };\n        document.querySelector('#room-name-submit').onclick = function(e){\n            var roomName = document.querySelector('#room-name-input').value;\n            window.location.pathname = '/chat/' + roomName + '/';\n        };\n    </script>\n</body>\n</html>\n\n\n"
+module.exports = "<!-- chat/templates/chat/room.html -->\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"/>\n    <title>Chat Room</title>\n    <p> my id is <strong> {{ id }} </strong>  </p>\n</head>\n<body>\n    <div id=\"main\">\n        <canvas id=\"board\" width=\"541\" height=\"541\"></canvas>\n    </div>\n    <br/>\n    <input id=\"chat-message-input\" type=\"text\" size=\"100\"/>\n    <br/>\n    <input id=\"chat-message-submit\" type=\"button\" value=\"send\"/>\n</body>\n         \n<style>\n    html, body {\n        margin: 20px;\n    }\n    #main {\n        height: 600px;\n        position: relative;\n        width: 600px;\n        background: gold;\n    }\n    #board{\n        margin:30px;\n        background-image: repeating-linear-gradient(0deg,transparent,transparent 29px,black 29px,black 30px),repeating-linear-gradient(-90deg,transparent,transparent 29px,black 29px,black 30px);\n        background-size: 30px 30px;\n        height: 541;\n        position: absolute;\n        width: 541;       \n    }\n</style>\n\n<script>\n    var coor_X = {{ x }};\n    var coor_Y = {{ y }};\n    var roomName = {{ room_name_json }};\n    var chatSocket = new WebSocket(\n        'ws://' + window.location.host +\n        '/ws/chat/' + roomName + '/');\n   // chatSocket.onmessage = function(e) {\n     //   var data = JSON.parse(e.data);\n     //   var message = data['message'];\n        var canvas = document.getElementById(\"board\");\n        var context = canvas.getContext(\"2d\");\n\n     //   var coordinate = message.split(\" \");\n        var y ;\n        switch (coor_X) {\n            case 'A': y = 0*30 ; break ; \n            case 'B': y = 1*30 ; break ;\n            case 'C': y = 2*30 ; break ;\n            case 'D': y = 3*30 ; break ;\n            case 'E': y = 4*30 ; break ;\n            case 'F': y = 5*30 ; break ;\n            case 'G': y = 6*30 ; break ;\n            case 'H': y = 7*30 ; break ;\n            case 'I': y = 8*30 ; break ;\n            case 'J': y = 9*30 ; break ;\n            case 'K': y = 10*30 ; break ;\n            case 'L': y = 11*30 ; break ;\n            case 'M': y = 12*30 ; break ;\n            case 'N': y = 13*30 ; break ;\n            case 'O': y = 14*30 ; break ;\n            case 'P': y = 15*30 ; break ;\n            case 'Q': y = 16*30 ; break ;\n            case 'R': y = 17*30 ; break ;\n            case 'S': y = 18*30 ; break ;\n        }\n        var x = (coor_Y-1)*30 ;\n        context.beginPath();\n\t\n        context.arc(x , y, 14, 0, 2 * Math.PI, false);\n        context.fillStyle = \"white\";\n        context.fill();\n        context.lineWidth = 1;\n        context.strokeStyle = \"black\";\n        context.stroke();\n    //};\n   // chatSocket.onclose = function(e) {\n    //    console.error('Chat socket closed unexpectedly');\n    //};\n    document.querySelector('#chat-message-input').focus();\n    document.querySelector('#chat-message-input').onkeyup = function(e) {\n       if (e.keyCode === 13) {  // enter, return\n           document.querySelector('#chat-message-submit').click();\n       }\n    };\n    document.querySelector('#chat-message-submit').onclick = function(e) {\n        var messageInputDom = document.querySelector('#chat-message-input');\n        var message = messageInputDom.value;\n        chatSocket.send(JSON.stringify({\n            'message': message\n        }));\n        messageInputDom.value = '';\n    };\n</script>\n\n</html>\n"
 
 /***/ }),
 
